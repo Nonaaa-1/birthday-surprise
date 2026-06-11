@@ -8,7 +8,7 @@
 body{
   margin:0;
   min-height:100vh;
-  background:linear-gradient(135deg,#3b0000,#9b0000,#d10000);
+  background:linear-gradient(135deg,#250000,#8b0000,#d60000);
   color:white;
   font-family:Georgia, serif;
   text-align:center;
@@ -24,117 +24,158 @@ body{
 }
 
 .card{
-  background:rgba(255,255,255,0.15);
+  background:rgba(255,255,255,0.18);
   padding:25px;
   border-radius:25px;
-  margin:20px auto;
-  max-width:500px;
-  box-shadow:0 0 20px #ff6b6b;
+  max-width:550px;
+  margin:30px auto;
+  box-shadow:0 0 25px rgba(255,255,255,0.4);
 }
 
 button{
   display:block;
   margin:15px auto;
-  padding:15px 25px;
+  padding:15px 30px;
   border:none;
   border-radius:30px;
   background:white;
   color:#9b0000;
-  font-size:17px;
+  font-size:18px;
+  cursor:pointer;
 }
 
 h1{
-  font-size:40px;
+  font-size:42px;
 }
 
-.heart{
-  font-size:50px;
+p{
+  font-size:20px;
 }
+
 </style>
 </head>
 
 <body>
 
+
 <div class="page active" id="p1">
-<div class="heart">❤️</div>
-<h1>Today is<br>Hoso's Birthday 🎂</h1>
-<p>A little surprise made with love ✨</p>
+<h1>❤️ Today is <br> Hoso's Birthday 🎂</h1>
+<p>A little surprise made with love 🥹🫂❤️</p>
 <button onclick="next(2)">Start ❤️</button>
 </div>
 
 
 <div class="page" id="p2">
 <div class="card">
-<h2>مين أكتر واحدة بتحبها يا حوسو؟ 😂</h2>
 
-<button onclick="wrong()">الأكل 🍕</button>
+<h2>أكتر حاجة بتحبها إيه يا حوسو؟ 🫣❤️</h2>
+
+<button onclick="wrong()">الأكل 🍕😂</button>
 <button onclick="wrong()">النوم 😴</button>
-<button onclick="next(3)">أنا طبعًا ❤️</button>
+<button onclick="next(3)">إنتي أكتر حاجة بحبها 🥹❤️</button>
+
 </div>
 </div>
 
 
 <div class="page" id="p3">
 <div class="card">
-<h2>لو أنا زعلت منك تعمل إيه؟ 🥺</h2>
 
-<button onclick="wrong()">فكك مني 😒</button>
-<button onclick="wrong()">متكلمنيش 🙄</button>
-<button onclick="wrong()">بكرهك 😭</button>
-<button onclick="next(4)">أصالحك لحد ما تضحكي ❤️</button>
+<h2>لو أنا زعلت منك إيه اللي بيحصل؟ 🥺❤️‍🩹</h2>
+
+<button onclick="wrong()">بقول فكك مني 😒</button>
+<button onclick="wrong()">بقول متتكلمش معايا 🙄</button>
+<button onclick="wrong()">بقول بكرهك 😭</button>
+
+<button onclick="next(4)">
+بتقولي هرنك علقة 😒😂❤️
+</button>
+
 </div>
 </div>
 
 
 <div class="page" id="p4">
 <div class="card">
-<h2>هتفضل معايا قد إيه؟ ❤️</h2>
 
-<button onclick="wrong()">أسبوع وخلاص</button>
-<button onclick="wrong()">لما أزهق 😂</button>
-<button onclick="next(5)">على طول إن شاء الله ❤️</button>
+<h2>هتفضل معايا قد إيه يا حوسحوس؟ 😍</h2>
+
+<button onclick="wrong()">أسبوع وخلاص 😂</button>
+<button onclick="wrong()">لما أزهق 😒</button>
+
+<button onclick="next(5)">
+على طول إن شاء الله 🫂❤️
+</button>
+
 </div>
 </div>
 
 
 <div class="page" id="p5">
 <div class="card">
-<h2>أنا بالنسبة لك إيه؟ 💕</h2>
 
-<button onclick="wrong()">صداع 😂</button>
-<button onclick="wrong()">واحدة عادية</button>
-<button onclick="next(6)">أحلى شخص في حياتي ❤️</button>
+<h2>أنا بالنسبالك إيه؟ 🫣❤️</h2>
+
+<button onclick="wrong()">هم كبير 😂</button>
+
+<button onclick="wrong()">
+واحدة من اللي أعرفهم 😐
+</button>
+
+<button onclick="next(6)">
+أحلى وأجمل وأطعم وأفرفش واحدة 😝💋😂❤️
+</button>
+
 </div>
 </div>
 
 
 <div class="page" id="p6">
 <div class="card">
-<h2>جاهز للمفاجأة؟ 🎁</h2>
 
-<button onclick="wrong()">لا 😂</button>
-<button onclick="wrong()">مش فاضي</button>
-<button onclick="next(7)">أكيد يا حبيبتي ❤️</button>
+<h2>جاهز للمفاجأة يا حوسحوس؟ 🎁😍</h2>
+
+<button onclick="wrong()">لا مش جاهز 🫣</button>
+<button onclick="wrong()">مش فاضي 😂</button>
+
+<button onclick="next(7)">
+أكيد يا نونايه ❤️🥹
+</button>
+
 </div>
 </div>
 
 
 <div class="page" id="p7">
+
 <h1>Happy Birthday Hoso ❤️🎂</h1>
 
+<div class="card">
+
 <p>
-هنا هحطلك الرسالة الحلوة اللي هتكتبيها لحسام ❤️
+هنا هحطلك الكلام الحلو اللي نونايه هتكتبهولك 🥹❤️🫂
 </p>
 
-<button onclick="next(8)">المفاجأة الأخيرة 🎥❤️</button>
+</div>
+
+<button onclick="next(8)">
+افتح المفاجأة الأخيرة 🎥❤️
+</button>
+
 </div>
 
 
 <div class="page" id="p8">
 
-<h1>For You ❤️</h1>
+<h1>For you Hoso 🥹❤️</h1>
 
-<p>هنا هنحط الفيديو بتاعك 🎬</p>
+<div class="card">
+
+<p>
+هنا هيبقى الفيديو بتاعك يا حوسحوس 🎬❤️
+</p>
+
+</div>
 
 </div>
 
@@ -147,10 +188,11 @@ document.getElementById("p"+n).classList.add("active");
 }
 
 function wrong(){
-alert("إيه الاختيار ده يا حوسحوس؟ 😂 جرب تاني ❤️");
+alert("غلط يا حوسحوس 😂❤️‍🩹 ركز كده واختار صح 🫣");
 }
 
 </script>
+
 
 </body>
 </html>
