@@ -2,14 +2,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Birthday Surprise</title>
+<title>Hoso Birthday ❤️</title>
 
 <style>
 body{
-  background:#ffeaf3;
+  margin:0;
+  min-height:100vh;
+  background:linear-gradient(135deg,#3b0000,#9b0000,#d10000);
+  color:white;
+  font-family:Georgia, serif;
   text-align:center;
-  font-family:Georgia;
-  color:#5b1235;
   padding:30px;
 }
 
@@ -21,20 +23,32 @@ body{
   display:block;
 }
 
-button{
-  background:#5b1235;
-  color:white;
-  border:0;
-  padding:15px 35px;
+.card{
+  background:rgba(255,255,255,0.15);
+  padding:25px;
   border-radius:25px;
-  font-size:18px;
+  margin:20px auto;
+  max-width:500px;
+  box-shadow:0 0 20px #ff6b6b;
 }
 
-.card{
+button{
+  display:block;
+  margin:15px auto;
+  padding:15px 25px;
+  border:none;
+  border-radius:30px;
   background:white;
-  padding:20px;
-  border-radius:20px;
-  margin:20px;
+  color:#9b0000;
+  font-size:17px;
+}
+
+h1{
+  font-size:40px;
+}
+
+.heart{
+  font-size:50px;
 }
 </style>
 </head>
@@ -42,59 +56,100 @@ button{
 <body>
 
 <div class="page active" id="p1">
-<h5>A SPECIAL DAY</h5>
-<h1>Today is<br> hoso's Birthday 🎂</h1>
-<p>✨ Let Hoso's celebration begin ✨</p>
-<button onclick="next(2)">ابدأ الكويز</button>
+<div class="heart">❤️</div>
+<h1>Today is<br>Hoso's Birthday 🎂</h1>
+<p>A little surprise made with love ✨</p>
+<button onclick="next(2)">Start ❤️</button>
 </div>
 
 
 <div class="page" id="p2">
-<h1>Quick Quiz 💕</h1>
-
 <div class="card">
-<p>بتحبني قد ايه؟ 😂</p>
+<h2>مين أكتر واحدة بتحبها يا حوسو؟ 😂</h2>
 
-<button onclick="wrong()">مش كتير</button>
-<br><br>
-<button onclick="next(3)">أكتر حاجة في الدنيا ❤️</button>
-
+<button onclick="wrong()">الأكل 🍕</button>
+<button onclick="wrong()">النوم 😴</button>
+<button onclick="next(3)">أنا طبعًا ❤️</button>
 </div>
 </div>
 
 
 <div class="page" id="p3">
-<h1>🎉 Let's Celebrate 🎉</h1>
+<div class="card">
+<h2>لو أنا زعلت منك تعمل إيه؟ 🥺</h2>
 
-<p>Our Beautiful Moments 📸</p>
-
-<p>هنا هنحط الصور بتاعتكم 💕</p>
-
-<button onclick="next(4)">الرسالة 💌</button>
+<button onclick="wrong()">فكك مني 😒</button>
+<button onclick="wrong()">متكلمنيش 🙄</button>
+<button onclick="wrong()">بكرهك 😭</button>
+<button onclick="next(4)">أصالحك لحد ما تضحكي ❤️</button>
+</div>
 </div>
 
 
 <div class="page" id="p4">
+<div class="card">
+<h2>هتفضل معايا قد إيه؟ ❤️</h2>
 
-<h1>Happy Birthday ❤️</h1>
+<button onclick="wrong()">أسبوع وخلاص</button>
+<button onclick="wrong()">لما أزهق 😂</button>
+<button onclick="next(5)">على طول إن شاء الله ❤️</button>
+</div>
+</div>
+
+
+<div class="page" id="p5">
+<div class="card">
+<h2>أنا بالنسبة لك إيه؟ 💕</h2>
+
+<button onclick="wrong()">صداع 😂</button>
+<button onclick="wrong()">واحدة عادية</button>
+<button onclick="next(6)">أحلى شخص في حياتي ❤️</button>
+</div>
+</div>
+
+
+<div class="page" id="p6">
+<div class="card">
+<h2>جاهز للمفاجأة؟ 🎁</h2>
+
+<button onclick="wrong()">لا 😂</button>
+<button onclick="wrong()">مش فاضي</button>
+<button onclick="next(7)">أكيد يا حبيبتي ❤️</button>
+</div>
+</div>
+
+
+<div class="page" id="p7">
+<h1>Happy Birthday Hoso ❤️🎂</h1>
 
 <p>
-كل سنة وانت طيب يا أجمل شخص 🎂  
-ربنا يخليك ليا وتفضل مبسوط دايمًا ❤️
+هنا هحطلك الرسالة الحلوة اللي هتكتبيها لحسام ❤️
 </p>
+
+<button onclick="next(8)">المفاجأة الأخيرة 🎥❤️</button>
+</div>
+
+
+<div class="page" id="p8">
+
+<h1>For You ❤️</h1>
+
+<p>هنا هنحط الفيديو بتاعك 🎬</p>
 
 </div>
 
 
 <script>
+
 function next(n){
 document.querySelector(".active").classList.remove("active");
 document.getElementById("p"+n).classList.add("active");
 }
 
 function wrong(){
-alert("لااا 😂 اختار الإجابة الصح");
+alert("إيه الاختيار ده يا حوسحوس؟ 😂 جرب تاني ❤️");
 }
+
 </script>
 
 </body>
