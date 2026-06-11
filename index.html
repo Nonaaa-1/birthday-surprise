@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Birthday Surprise</title>
+
+<style>
+body{
+  background:#ffeaf3;
+  text-align:center;
+  font-family:Georgia;
+  color:#5b1235;
+  padding:30px;
+}
+
+.page{
+  display:none;
+}
+
+.active{
+  display:block;
+}
+
+button{
+  background:#5b1235;
+  color:white;
+  border:0;
+  padding:15px 35px;
+  border-radius:25px;
+  font-size:18px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:20px;
+  margin:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="page active" id="p1">
+<h5>A SPECIAL DAY</h5>
+<h1>Today is<br> My Love's Birthday 🎂</h1>
+<p>✨ Let the celebration begin ✨</p>
+<button onclick="next(2)">ابدأ الكويز</button>
+</div>
+
+
+<div class="page" id="p2">
+<h1>Quick Quiz 💕</h1>
+
+<div class="card">
+<p>بتحبني قد ايه؟ 😂</p>
+
+<button onclick="wrong()">مش كتير</button>
+<br><br>
+<button onclick="next(3)">أكتر حاجة في الدنيا ❤️</button>
+
+</div>
+</div>
+
+
+<div class="page" id="p3">
+<h1>🎉 Let's Celebrate 🎉</h1>
+
+<p>Our Beautiful Moments 📸</p>
+
+<p>هنا هنحط الصور بتاعتكم 💕</p>
+
+<button onclick="next(4)">الرسالة 💌</button>
+</div>
+
+
+<div class="page" id="p4">
+
+<h1>Happy Birthday ❤️</h1>
+
+<p>
+كل سنة وانت طيب يا أجمل شخص 🎂  
+ربنا يخليك ليا وتفضل مبسوط دايمًا ❤️
+</p>
+
+</div>
+
+
+<script>
+function next(n){
+document.querySelector(".active").classList.remove("active");
+document.getElementById("p"+n).classList.add("active");
+}
+
+function wrong(){
+alert("لااا 😂 اختار الإجابة الصح");
+}
+</script>
+
+</body>
+</html>
